@@ -1,20 +1,67 @@
-# vite ⚡
+# YOGSANG Returnable India - Packaging as a Service (PaaS)
 
-> Next Generation Frontend Tooling
+> High-performance 60FPS Apple-style canvas scroll showcase and sustainable packaging landing page.
 
-- 💡 Instant Server Start
-- ⚡️ Lightning Fast HMR
-- 🛠️ Rich Features
-- 📦 Optimized Build
-- 🔩 Universal Plugin Interface
-- 🔑 Fully Typed APIs
+![Yogsang Banner](public/frames/ezgif-frame-240.jpg)
 
-Vite (French word for "fast", pronounced `/vit/`) is a new breed of frontend build tool that significantly improves the frontend development experience. It consists of two major parts:
+## 🚀 Features
 
-- A dev server that serves your source files over [native ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), with [rich built-in features](https://vite.dev/guide/features.html) and astonishingly fast [Hot Module Replacement (HMR)](https://vite.dev/guide/features.html#hot-module-replacement).
+- **60FPS Canvas Scroll Animation**: Smooth inertial lerp scrubbing across 240 high-resolution sequence frames.
+- **Aspect-Fit Rendering**: Automatically scales for desktop, tablet, and mobile screens without cropping essential details.
+- **Fixed Glassmorphic Navigation Bar**: Translucent blurred header with smooth section anchors.
+- **Comprehensive Landing Page**: Industrial challenge breakdowns, Packaging as a Service (PaaS) value pillars, industry applications, and enterprise consultation CTAs.
+- **Deploy Ready**: Fully optimized for Vercel, Netlify, or any static/Node CDN with Vite bundling.
 
-- A [build command](https://vite.dev/guide/build.html) that bundles your code with [Rollup](https://rollupjs.org), pre-configured to output highly optimized static assets for production.
+---
 
-In addition, Vite is highly extensible via its [Plugin API](https://vite.dev/guide/api-plugin.html) and [JavaScript API](https://vite.dev/guide/api-javascript.html) with full typing support.
+## 🛠️ Local Development
 
-[Read the Docs to Learn More](https://vite.dev).
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Start Local Dev Server
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### 3. Build for Production
+```bash
+npm run build
+```
+The production bundle will be generated in the `dist/` directory.
+
+---
+
+## ☁️ Deploy to Vercel (1-Click)
+
+1. Go to [vercel.com/new](https://vercel.com/new).
+2. Import this GitHub repository (`paithanpagareparth-ctrl/yogsang`).
+3. Vercel will automatically detect **Vite**:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+4. Click **Deploy**.
+
+---
+
+## 📁 Project Structure
+
+```
+├── public/
+│   └── frames/          # 240 sequence animation frames (ezgif-frame-001.jpg -> 240.jpg)
+├── frames/              # Frame source directory
+├── index.html           # Main semantic HTML structure
+├── style.css            # Tailwind + custom CSS styling
+├── scrollEngine.js      # 60FPS canvas scroll engine
+├── main.js              # Application entry point & animations
+├── package.json         # Dependencies & scripts
+└── vercel.json          # Vercel deployment & caching configuration
+```
+
+---
+
+## 📄 License
+MIT © 2026 YOGSANG Returnable India.
