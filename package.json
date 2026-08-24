@@ -1,14 +1,25 @@
 {
-  "name": "yogsang-packaging-web",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite --port 3000 --open",
-    "build": "vite build",
-    "preview": "vite preview"
+  "name": "picocolors",
+  "version": "1.1.1",
+  "main": "./picocolors.js",
+  "types": "./picocolors.d.ts",
+  "browser": {
+    "./picocolors.js": "./picocolors.browser.js"
   },
-  "devDependencies": {
-    "vite": "^5.4.2"
-  }
+  "sideEffects": false,
+  "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors",
+  "files": [
+    "picocolors.*",
+    "types.d.ts"
+  ],
+  "keywords": [
+    "terminal",
+    "colors",
+    "formatting",
+    "cli",
+    "console"
+  ],
+  "author": "Alexey Raspopov",
+  "repository": "alexeyraspopov/picocolors",
+  "license": "ISC"
 }
